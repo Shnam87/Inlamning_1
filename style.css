@@ -1,4 +1,6 @@
-
+/*
+De 3 media-queries som jag skapade för denna uppgift är en för max bredd 600px , en för över 600px och en för över 1200px
+*/
 body {
     margin: 0;
     display: flex;
@@ -10,7 +12,9 @@ body {
     font-size: 20px;
     font-family: 'Montserrat', sans-serif;
 }
-
+/* 
+placera bakgrundsbilden och texten "Voodoo" i mitten av "header" 
+*/
 header {
     display: flex;
     flex-direction: column;
@@ -58,6 +62,9 @@ main {
     width: 100%;
 }
 
+/* 
+Placera det första stycket och den första bilden bredvid varandra i ett radformat
+*/
 .p1 {
     display: flex;
     flex-direction: row;
@@ -65,7 +72,9 @@ main {
     width: 100%;
     max-width: 50rem;
 }
-
+/* 
+Samma sak som ovanför, placerat den andra stycket och den andra bilden bredvid varandra i ett radformat
+*/
 .p2 {
     display: flex;
     flex-direction: row;
@@ -81,7 +90,9 @@ main {
     width: 100%;
     max-width: 50rem;
 }
-
+/*
+Justera placering av videon till mitten av sidan
+*/
 .video {
     display: flex;
     justify-content: center;
@@ -91,7 +102,9 @@ video {
     width: 100%;
     max-width: 60rem;
 }
-
+/*
+lagt till den andra bakgrundsbilden samt anpassat den så den täcker kolumn och texten bra.
+*/
 .p4 {
     display: flex;
     flex-direction: column;
@@ -112,7 +125,9 @@ video {
     max-width: 50rem;
     padding: 1rem;
 }
-
+/*
+Placera sidfotens innehåll i 2 rad bredvid varandra samt justerat de till mitten av sidan
+*/
 footer {
     display: flex;
     flex-direction: row;
@@ -125,8 +140,9 @@ footer {
     width: 100%;
     padding: 4rem 0;
 }
-
-
+/*
+Gör 2 Sidfoternas innehåll till 2 kolumn och jusetera de till mitten av sidan.
+*/
 footer div {
     display: flex;
     flex-direction: column;
@@ -135,16 +151,23 @@ footer div {
     align-items: flex-start;
     padding: 5px 5px;
 }
-
+/*
+Vänsterjustera texten och lade till vänster marginal
+*/
 .left_footer {
     text-align: left;
     margin-right: 3rem;
 }
-
+/*
+Högerjustera texten
+*/
 .right_footer {
     text-align: right;
 }
 
+/*
+lade till specifika ändringar för att anpassa till skärmar med max bredd på 600px
+*/
 @media only screen and (max-width: 600px) {
     header {
         min-height: 17rem;
@@ -171,11 +194,18 @@ footer div {
         padding: 0rem;
     }
 
+/*
+Ändrat formen från att vara i rad till att vara i kolumn, för att sidan ska vara mer läsvänlig på mindre skärmar.
+*/
     .p1 {
         flex-direction: column;
         width: 80%;
         height: 80%;
     }
+
+/*
+Ändrat formen från att vara i rad till att vara i kolumn, för att sidan ska vara mer läsvänlig på mindre skärmar.
+*/    
     .p2 {
         flex-direction: column;
         width: 80%;
@@ -202,12 +232,15 @@ footer div {
     }
 }
 
-@media only screen and (min-width: 600px) {
+/*
+lade till specifika ändringar för att anpassa till skärmar med en bredd större än 600px
+*/
+@media only screen and (min-width: 601px) {
     header {
-        min-height: 22rem;
-        max-height: 25rem;
+        min-height: 30rem;
+        max-height: 35rem;
         width: 100%;
-        max-width: 900px;
+        max-width: 1000px;
     }
 
     body {
@@ -234,10 +267,14 @@ footer div {
     }
 }
 
+/*
+lade till specifika ändringar för att anpassa till skärmar med en bredd större än 1200px
+*/
 @media only screen and (min-width: 1200px) {
     header {
-        min-height: 40rem;
-        max-height: 44rem;
+        min-height: 41rem;
+        max-height: 45rem;
+        max-width: 1200px;
     }
     
     .page_title {
