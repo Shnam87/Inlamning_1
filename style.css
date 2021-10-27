@@ -1,0 +1,263 @@
+
+body {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(85, 81, 81);
+    align-items: center;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(./resursers/bilder/header.png.png);
+    min-height: 42rem;
+    max-height: 48rem;
+    width: 100%;
+    max-width: 1500px;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.page_title {
+    color: black;
+    font-size: 1rem;
+}
+
+
+.title {
+    padding-top: 0%;
+    padding-right: 0rem;
+
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.main_title {
+    text-align: right;
+    padding: 0rem;
+}
+
+.title_text {
+    text-align: right;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.p1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    max-width: 50rem;
+}
+
+.p2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: right; 
+    width: 100%;
+    max-width: 50rem;
+}
+
+.p3 {
+    padding: 0;
+    width: 100%;
+    max-width: 50rem;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+}
+
+video {
+    width: 100%;
+    max-width: 60rem;
+}
+
+.p4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+    align-items: center;
+    background-image: url(./resursers/bilder/Q1_newsletter-02.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat-x;
+    overflow: visible;
+    min-height: 25rem;
+    width: 100%;
+}
+
+.p4_text {
+    margin-bottom: 2rem;
+    max-width: 50rem;
+    padding: 1rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: -3;
+    color:ghostwhite;
+    background-color: black;
+    width: 100%;
+    padding: 4rem 0;
+}
+
+
+footer div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 21rem;
+    align-items: flex-start;
+    padding: 5px 5px;
+}
+
+.left_footer {
+    text-align: left;
+    margin-right: 3rem;
+}
+
+.right_footer {
+    text-align: right;
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        min-height: 17rem;
+        max-height: 20rem;
+        width: 100%;
+        max-width: 500px;
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+    .header_bg {
+        display: none;
+    }
+
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .main_title {
+        text-align: right;
+        padding: 0rem;
+    }
+
+    .p1 {
+        flex-direction: column;
+        width: 80%;
+        height: 80%;
+    }
+    .p2 {
+        flex-direction: column;
+        width: 80%;
+        height: 80%;
+    }
+
+    .p4 {
+        padding: 0px;
+        min-height: 18rem;
+    }
+
+    footer {
+        width: 100%;
+        padding: 1rem 0;
+    }    
+
+    footer div {
+        width: 10rem;
+        padding: 3px 3px;
+    }
+    
+    .left_footer {
+        margin-right: 1rem;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    header {
+        min-height: 22rem;
+        max-height: 25rem;
+        width: 100%;
+        max-width: 900px;
+    }
+
+    body {
+        font-size: 14px;
+    }
+  
+    .header_bg {
+        display: none;
+    }
+    
+    .p4 {
+        padding: 0px;
+        min-height: 20rem;
+    }
+
+    footer {
+        width: 100%;
+        padding: 1rem 0;
+    }
+    
+    footer div {
+        width: 16rem;
+        padding: 2px 2px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    header {
+        min-height: 40rem;
+        max-height: 44rem;
+    }
+    
+    .page_title {
+        font-size: 1.3rem;
+    }
+
+    .header_bg {
+        display: none;
+    }
+
+    .p4 h1 {
+        padding-right: 3rem;
+    }
+
+    .p4 {
+        background-size: contain;
+    }
+
+    
+    .left_footer {
+        margin-right: 6rem;
+    }
+}
